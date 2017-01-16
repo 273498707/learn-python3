@@ -7,6 +7,7 @@ print('len(classmates)= %d' %len(classmates) )
 print('clsssmates[0]= %s' %(classmates[0]) )
 print('classmates[1]= %s' %(classmates[1]) )
 print('classmates[2]= %s' %(classmates[2]) )
+classmates.append('Adam')
 classmates.pop()
 print('classmates= %s' %(classmates) )
 
