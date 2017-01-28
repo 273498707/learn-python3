@@ -5,10 +5,15 @@ import platform
 
 print(platform.python_version())
 
-age = 20 
+# notes:
+# input() returns strings
+# int(string) return a Integer
+age = int(input('Input your age: '))
+
 if age >= 18:
-    print('Your age is %s' %age)
     print('adult')
-
-
+elif age >= 6:
+	print('teenager')
+else:
+	print('kild')
 
