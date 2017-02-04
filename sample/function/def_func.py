@@ -4,10 +4,11 @@
 import math
 
 def my_abs(x):
-	result = x
-	if x > 0: result = x
-	elif x == 0: result = 0
-	else: result = -x
-	return result
+    if not isinstance(x, (int, float)):
+        raise TypeError('bad operand type')
+    if x >= 0:
+        return x
+    else:
+        return -x
 n = -10
 print(my_abs(n))
